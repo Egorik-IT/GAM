@@ -1,0 +1,113 @@
+
+.game {
+	width: 1100px;
+	height: 500px;
+	border-bottom: 1px solid black;
+	margin: auto;
+}
+#pakimon {
+	width: 90px;
+	height: 70px;
+	background: url(../img/pacimon.gif) no-repeat;
+	background-size: 90px 70px;
+	position: relative;
+	top: 430px;
+	left: 40px;
+}
+#tiger__1{
+	width: 90px;
+	height: 70px;
+	background: url(../img/tiger.gif) no-repeat;
+	background-size: 90px 70px;
+	position: relative;
+	left: 1040px;
+	top: 370px;
+	animation: tigerMove__1 1.3s infinite linear ;
+}
+#cactus{
+	width: 90px;
+	height: 70px;
+	background: url(../img/cactus.png) no-repeat;
+	background-size: 90px 70px;
+	position: relative;
+	left: 1100px;
+	top: 294px;
+	animation: tigerMove__2 3.4s infinite linear ;
+}
+.jump{
+	animation: pakimonMove 0.39s linear ;
+}
+@keyframes tigerMove__1{
+	0%{
+		left: 1040px;
+	}
+	100%{
+		left: -54px;
+	}
+}
+@keyframes tigerMove__2{
+	0%{
+		left: 1100px;
+	}
+	100%{
+		left: -54px;
+	}
+}
+@keyframes pakimonMove{
+	0%{
+		top: 430px;
+	}
+	30%{
+		top: 330px;
+	}
+	60%{
+		top: 290px;
+	}
+	30%{
+		top: 330px;
+	}
+	100%{
+		top: 430px
+	}
+}
+
+.timer {
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: rgb(0, 174, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+}
+.timer__line {
+}
+.timer__body {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #333;
+	text-align: center;
+	overflow: hidden;
+}
+.timer__counter {
+	animation: counter 241s steps(240, end) forwards;
+}
+.timer__counter span{
+		font-size: 40px;
+		display: flex;
+		height: 100px;
+		justify-content: center;
+		align-items: center;
+}
+
+@keyframes counter{
+	0%{
+	}
+	100%{
+		transform: translate(0px, -24000px);
+	}
+}

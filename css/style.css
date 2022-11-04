@@ -22,7 +22,7 @@
 	position: relative;
 	left: 1040px;
 	top: 370px;
-	animation: tigerMove__1 1.3s infinite linear ;
+	animation: tigerMove__1 2s infinite linear ;
 }
 #cactus{
 	width: 90px;

@@ -1,3 +1,4 @@
+
 .game {
 	width: 1100px;
 	height: 500px;
@@ -71,6 +72,7 @@
 }
 
 .timer {
+
 	height: 140px;
 	width: 140px;
 	border-radius: 50%;
